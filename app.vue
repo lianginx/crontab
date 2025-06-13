@@ -27,7 +27,7 @@ function parseCrontab() {
   }
 
   try {
-    const interval = parser.parseExpression(cronExpr.value)
+    const interval = parser.parse(cronExpr.value)
 
     const results = []
     for (let i = 0; i < 5; i++) {
