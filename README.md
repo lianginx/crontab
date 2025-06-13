@@ -1,4 +1,4 @@
-# 🕒 Crontab 中文解释器
+# 🕒 Crontab 时间表达式编辑工具
 
 一个简洁、美观、实用的 Cron 表达式可视化工具，支持中文解析与执行时间预览，灵感来源于 [crontab.guru](https://crontab.guru)，面向中文用户做了本地化增强。
 
