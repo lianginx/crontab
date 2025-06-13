@@ -1,75 +1,44 @@
-# Nuxt Minimal Starter
+# 🕒 Crontab 中文解释器
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+一个简洁、美观、实用的 Cron 表达式可视化工具，支持中文解析与执行时间预览，灵感来源于 [crontab.guru](https://crontab.guru)，面向中文用户做了本地化增强。
 
-## Setup
+## 📷 截图预览
 
-Make sure to install dependencies:
+（你可以在此添加你的应用运行截图）
+
+## 🚀 在线预览
+
+👉 <https://crontab.in-x.cc>
+
+## 📘 使用说明
+
+1. 输入 Cron 表达式（支持标准 5 位格式：分钟 小时 日 月 星期）。
+2. 即时显示最近 5 次执行时间
+3. 支持点击“分钟”、“小时”等标签，高亮定位到对应字段。
+4. 点击“复制”按钮快速复制当前表达式。
+
+## 🧪 示例表达式
+
+|  表达式 | 含义 |
+| --- | --- |
+| \* \* \* \* \* | 每分钟执行一次 |
+| 0 \*/3 \* \* \* | 每天每 3 小时整点执行 |
+| 30 9 \* \* 1-5 | 每周一至周五的早上 9:30 执行 |
+| 0 0 1 \* \* | 每月 1 日凌晨执行 |
+
+## 📦 安装与运行
 
 ```bash
-# npm
+# 安装依赖
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# 启动开发服务
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+# 构建生产版本
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+## 📄 License
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+MIT License © 2025 Liang
