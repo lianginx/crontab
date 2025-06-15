@@ -88,7 +88,7 @@ function handleSelect(type: 'minute' | 'hour' | 'day' | 'month' | 'week') {
 
         <div class="mb-8 space-y-2">
           <div v-for="(time, index) in (moreTimes ? nextTimes : nextTimes.slice(0, 1))" :key="index" class="flex items-center">
-            <div v-if="index === 0" class="font-bold italic text-2xl flex items-baseline space-x-2 mb-4 text-gray-400">
+            <div v-if="index === 0" class="text-xl font-bold italic lg:text-2xl flex items-baseline space-x-2 mb-4 text-gray-400">
               <div>「</div>
               <div class="mr-4 underline cursor-pointer" @click="moreTimes = !moreTimes">
                 下次
@@ -110,7 +110,7 @@ function handleSelect(type: 'minute' | 'hour' | 'day' | 'month' | 'week') {
         </div>
 
         <div class="w-3/4 flex items-center">
-          <input ref="input" v-model="cronExpr" class="w-full outline-0 text-center border-3 border-[#FFFF80] h-18 text-3xl rounded-md shadow-[0_0_10px_#ffff80aa]" placeholder="* * * * *">
+          <input ref="input" v-model="cronExpr" class="w-full outline-0 pl-6 lg:pl-0 lg:text-center border-3 border-[#FFFF80] h-18 text-3xl rounded-md shadow-[0_0_10px_#ffff80aa]" placeholder="* * * * *">
           <button class="bg-[#ffff80] text-[#171717] font-bold rounded-md py-0.5 -ml-20 w-16 hover:bg-[#ffff80e8] cursor-pointer" @click="handleCopy">
             复制
           </button>
@@ -134,7 +134,7 @@ function handleSelect(type: 'minute' | 'hour' | 'day' | 'month' | 'week') {
           </div>
         </div>
 
-        <div class="mt-10 w-2/4">
+        <div class="mt-10 mb-20 w-full lg:w-2/4">
           <div v-for="item, index in help" :key="index" class="flex items-baseline text-gray-400 border-b border-b-gray-500 py-2">
             <div class="w-2/5 text-end mr-8">
               {{ item.keyword }}
